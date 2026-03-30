@@ -11,10 +11,9 @@ const base = process.env.BASE_PATH ?? "/";
 
 export default defineConfig({
   base,
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  // Force Vite to recognize the current directory as root
+  root: "./",
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
@@ -27,5 +26,18 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    // 1. Increases the limit to stop the warning from cluttering logs
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        // 2. Splits vendor libraries (like React/Lucide) into separate files
+        // This makes the initial load faster and prevents "massive chunk" errors
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            return "vendor";
+          }
+        },
+      },
+    },
   },
 });
