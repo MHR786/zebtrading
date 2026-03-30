@@ -1,0 +1,22 @@
+packages:
+  "framer-motion": "For high-level scroll and entry animations across the site"
+  "react-countup": "For the animated statistics counters"
+  "react-intersection-observer": "To trigger animations when elements scroll into view"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes safely"
+
+images:
+  - path: "artifacts/zeb-trading/public/images/hero-bg.png"
+    description: "Dark industrial auto parts warehouse background, dramatic red and gold ambient lighting, hyperrealistic, cinematic depth of field"
+    aspect_ratio: "16:9"
+  - path: "artifacts/zeb-trading/public/images/engine-part.png"
+    description: "Isolated glowing gold and red high-performance car engine part, pristine dark background, 3D render, highly detailed"
+    aspect_ratio: "1:1"
+  - path: "artifacts/zeb-trading/public/images/quality-parts.png"
+    description: "High-end sports car brake caliper and slotted rotor, dark background with subtle red rim lighting, extremely detailed, professional product photography"
+    aspect_ratio: "16:9"
+
+notes:
+  - Frontend-only marketing site for ZEB Trading.
+  - Smooth scroll implementation assumes one-page layout.
+  - Form submission is mocked via a simulated TanStack mutation since there is no backend.
