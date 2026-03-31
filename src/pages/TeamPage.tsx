@@ -6,10 +6,10 @@ import { Mail, Phone, ArrowRight, Linkedin } from "lucide-react";
 
 const LEADERSHIP = [
   {
-    name: "Ziad El-Bassam",
+    name: "Khan Zeb",
     role: "Founder & Chief Executive Officer",
     dept: "Leadership",
-    bio: "With 20+ years in the automotive supply industry, Ziad founded ZEB Trading in 2009 with a vision to bring transparent, reliable auto parts sourcing to the UAE. His deep supplier relationships and industry expertise have shaped the company's reputation for authenticity and excellence.",
+    bio: "With 20+ years in the automotive supply industry, Ziad founded ZEB Trading in 2009 with a vision to bring transparent, reliable auto parts sourcing to the. His deep supplier relationships and industry expertise have shaped the company's reputation for authenticity and excellence.",
     expertise: [
       "Strategic Partnerships",
       "Supply Chain Management",
@@ -20,7 +20,7 @@ const LEADERSHIP = [
     color: "bg-primary",
   },
   {
-    name: "Nadia Al-Rashid",
+    name: "UnKnown",
     role: "Chief Operations Officer",
     dept: "Leadership",
     bio: "Nadia oversees all operational functions at ZEB Trading, including warehouse management, logistics, and quality assurance. Her systematic approach to process optimization has reduced order lead times by 40% since joining in 2014.",
@@ -34,7 +34,7 @@ const LEADERSHIP = [
     color: "bg-accent",
   },
   {
-    name: "Marcus Osei",
+    name: "UnKnown",
     role: "Chief Commercial Officer",
     dept: "Leadership",
     bio: "Marcus leads ZEB's commercial strategy, B2B partnerships, and key account management. He has personally developed relationships with over 300 workshop and dealership accounts across the GCC, growing revenues by 35% year-on-year.",
@@ -281,7 +281,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-secondary border-t border-border">
+      {/* <section className="py-20 bg-secondary border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px flex-1 bg-border" />
@@ -296,7 +296,7 @@ export default function TeamPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -413,10 +413,10 @@ export default function TeamPage() {
               Contact Us <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="tel:+97141234567"
+              href="tel:+81 90 8816 6070"
               className="flex items-center gap-2 px-8 py-4 rounded-sm font-bold uppercase tracking-wider text-sm border-2 border-white/50 text-white hover:bg-white/10 transition-all"
             >
-              <Phone className="w-4 h-4" /> +971 4 123 4567
+              <Phone className="w-4 h-4" /> +81 90 8816 6070
             </a>
           </div>
         </div>

@@ -28,8 +28,9 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Logo className="mb-6" />
             <p className="text-muted-foreground text-sm max-w-sm leading-relaxed mb-6">
-              ZEB Trading is the premier destination for high-quality automotive parts.
-              Serving garages, dealerships, and enthusiasts with genuine OEM and aftermarket solutions worldwide.
+              ZEB Trading is the premier destination for high-quality automotive
+              parts. Serving garages, dealerships, and enthusiasts with genuine
+              OEM and aftermarket solutions worldwide.
             </p>
             <Link
               href="/contact"
@@ -41,11 +42,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-foreground uppercase tracking-widest mb-6 text-sm">Quick Links</h4>
+            <h4 className="font-display font-bold text-foreground uppercase tracking-widest mb-6 text-sm">
+              Quick Links
+            </h4>
             <ul className="space-y-3">
               {QUICK_LINKS.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -54,11 +60,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-foreground uppercase tracking-widest mb-6 text-sm">Products</h4>
+            <h4 className="font-display font-bold text-foreground uppercase tracking-widest mb-6 text-sm">
+              Products
+            </h4>
             <ul className="space-y-3">
               {PRODUCT_LINKS.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
+                  >
                     {link.name}
                   </Link>
                 </li>
@@ -67,24 +78,48 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display font-bold text-foreground uppercase tracking-widest mb-6 text-sm">Contact Info</h4>
+            <h4 className="font-display font-bold text-foreground uppercase tracking-widest mb-6 text-sm">
+              Contact Info
+            </h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                <span className="text-sm text-muted-foreground">123 Industrial Zone, Sector 4<br />Dubai, United Arab Emirates</span>
+                <span className="text-sm text-muted-foreground">
+                  297-1 Minamisho-CHO, NARA CITY
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+97141234567" className="text-sm text-muted-foreground hover:text-primary transition-colors block">+971 4 123 4567</a>
-                  <a href="tel:+971509876543" className="text-sm text-muted-foreground hover:text-primary transition-colors block">+971 50 987 6543</a>
+                  <a
+                    href="tel:+81 90 8816 6070"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors block"
+                  >
+                    +81 90 8816 6070
+                  </a>
+                  <a
+                    href="tel:+81 90 9880 6070"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors block"
+                  >
+                    +81 90 9880 6070
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <div>
-                  <a href="mailto:sales@zebtrading.com" className="text-sm text-muted-foreground hover:text-primary transition-colors block">sales@zebtrading.com</a>
-                  <a href="mailto:info@zebtrading.com" className="text-sm text-muted-foreground hover:text-primary transition-colors block">info@zebtrading.com</a>
+                  <a
+                    href="mailto:zt.zebtrading@gmail.com"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors block"
+                  >
+                    zt.zebtrading@gmail.com
+                  </a>
+                  <a
+                    href="mailto:info@zebtrading.com"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors block"
+                  >
+                    info@zebtrading.jp
+                  </a>
                 </div>
               </li>
             </ul>
@@ -93,7 +128,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground font-medium">
-            &copy; {new Date().getFullYear()} ZEB Trading LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} ZEB Trading. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-xs text-muted-foreground">
             <span>Privacy Policy</span>
